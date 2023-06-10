@@ -32,7 +32,7 @@ def Generate():
             Full = Full.replace("\"full\":\"","")
             Full = Full.replace('"}','')
             Size = Temp[4]
-            webhook = DiscordWebhook(url='https://discordapp.com/api/webhooks/1043880981196718150/e2xZvKCkzsHDehSxqdnooIBlyG47yKJCDqcekrbj5nVgFoznvZH_oKsdL0wywBS5AC9e', content=Name+'\n'+Size+'\n'+Full+'\n')
+            webhook = DiscordWebhook(url='YOUR_DISCORD_WEBHOOK', content=Name+'\n'+Size+'\n'+Full+'\n')
             response = webhook.execute()
 
 
